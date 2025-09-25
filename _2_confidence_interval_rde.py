@@ -132,8 +132,8 @@ def analyze_dir_for_hanna(base_dir, n_subjects=300, n_raters=2, dataset_name="ha
     return averaged
 
 # Example usage:
-base_dir = "/share/pi/nigam/users/aunell/PAC_Judge/results/images/2025-09-17-rwe-icc-results"
-base_dir = "/share/pi/nigam/users/aunell/PAC_Judge/results/images/2025-09-23-1-rwe-icc-results-100"
+base_dir = "../results/images/rwe-icc-results"
+base_dir = "../results/images/2025-09-23-1-rwe-icc-results-100"
 n_subjects = 300
 n_raters = 2
 DATASET="mslr"
@@ -181,7 +181,7 @@ if avg_summary is not None:
     out=compute_cluster_vs_random_improvement(avg_summary)
     breakpoint()
     plot_ci_width_with_variability(avg_summary, dataset_name=DATASET,
-                              out_path=f"/share/pi/nigam/users/aunell/PAC_Judge/confidence_plot_var_{DATASET}.png")
+                              out_path=f"../confidence_plot_var_{DATASET}.png")
     print("Averaged summary stats:\n", avg_summary)
-    print("Saved image to:" + f"/share/pi/nigam/users/aunell/PAC_Judge/confidence_plot_var_{DATASET}.png" )
+    print("Saved image to:" + f"../confidence_plot_var_{DATASET}.png" )
     
