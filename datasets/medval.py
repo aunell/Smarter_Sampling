@@ -14,8 +14,8 @@ DIMENSION_CRITERIA = {
 class MedValDataset(pacDataset):
     def extract_data(self):
         # Load your CSVs
-        df1 = pd.read_csv("/share/pi/nigam/users/aunell/PAC_Judge/data/inter_physician.csv")  # first CSV with physician_1 ... physician_12
-        df2 = pd.read_csv("/share/pi/nigam/users/aunell/PAC_Judge/data/MedVAL-Bench.csv")         # second CSV with reference/target/candidate
+        df1 = pd.read_csv("../data/inter_physician.csv")  # first CSV with physician_1 ... physician_12
+        df2 = pd.read_csv("../data/MedVAL-Bench.csv")         # second CSV with reference/target/candidate
 
         df1["id"] = df1["id"].str.strip()
         df1["task"] = df1["task"].str.strip()
