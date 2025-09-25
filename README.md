@@ -1,7 +1,7 @@
-# PAC_Judge
+# SMARTER SAMPLING FOR LLM JUDGES: RELIABLE EVALUATION ON A BUDGET
 
 ## Overview
-PAC_Judge provides both theoretical and empirical guarantees for improved sampling methods to accurately estimate the **Intraclass Correlation Coefficient (ICC)** of human and LLM judge rankings of non-verifiable text.  
+This work provides both theoretical and empirical guarantees for improved sampling methods to accurately estimate the **Intraclass Correlation Coefficient (ICC)** of human and LLM judge rankings of non-verifiable text.  
 Our goal is to improve the robustness and efficiency of LLM-judge evaluations, particularly in **data-scarce regimes**.
 
 ---
@@ -30,7 +30,7 @@ _1_real_data_experiment_simulation_cleaned.py: Runs experiments across datasets 
 _2_confidence_interval_rde.py: Computes and plots confidence interval widths for the rollouts.
 
 Dataset Classes
-PAC_Judge uses a flexible dataset abstraction:
+Smarter_Sampling uses a flexible dataset abstraction:
 
 pacDataset (../datasets/pac_dataset.py):
 Base class for all datasets. Handles data loading, prompt creation, and result formatting.
