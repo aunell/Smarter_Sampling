@@ -14,11 +14,10 @@ from simulation import *
 # Centralized File Locations
 # ------------------------
 DATE = datetime.now().strftime("%Y-%m-%d")
-BASE_DIR = "/share/pi/nigam/users/aunell/PAC_Judge/results"
+BASE_DIR = "../results"
 JUDGE_SCORES_DIR = os.path.join(BASE_DIR, "judge_scores")
 IMAGES_DIR = os.path.join(BASE_DIR, "images", f"{DATE}-rwe-icc-results-150")
-# IMAGES_DIR = "/share/pi/nigam/users/aunell/PAC_Judge/results/images/2025-09-18-claude-rwe-icc-results"
-IMAGES_DIR="/share/pi/nigam/users/aunell/PAC_Judge/results/images/2025-09-23-1-rwe-icc-results-100"
+IMAGES_DIR="../results/images/2025-09-23-1-rwe-icc-results-100"
 calculate_icc_fn = calculate_icc_icc
 
 os.makedirs(IMAGES_DIR, exist_ok=True)
