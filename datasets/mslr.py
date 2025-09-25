@@ -117,7 +117,7 @@ class MSLRDataset(pacDataset):
         # Read the JSON file
         # Initialize an empty list to store the data
         data = []
-        with open('/share/pi/nigam/users/aunell/PAC_Judge/data/data_with_overlap_scores.json', 'r') as file:
+        with open('../data/data_with_overlap_scores.json', 'r') as file:
             for line in file:
                 if line.strip():  # Skip empty lines
                     json_obj = json.loads(line)
