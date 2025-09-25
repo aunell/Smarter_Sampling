@@ -19,7 +19,7 @@ DIMENSION_CRITERIA = {
 class HannaDataset(pacDataset):
     def extract_data(self):
         # Read the CSV file
-        df = pd.read_csv('/share/pi/nigam/users/aunell/PAC_Judge/data/hanna_stories_annotations.csv')
+        df = pd.read_csv('../data/hanna_stories_annotations.csv')
         
         # Assuming the CSV has columns for text, scores, etc.
         # Adjust column names based on actual CSV structure
